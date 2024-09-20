@@ -1,0 +1,12 @@
+clc;
+clear
+F1=50;
+F2=60;
+F3=20;
+F4=40;
+angl1=30;
+d1=2;
+d2=0;
+d3=3*sin(deg2rad(angl1));
+d4=4+3*cos(deg2rad(angl1));
+m_o=-F1*d1+F2*d2+F3*d3-F4*d4;

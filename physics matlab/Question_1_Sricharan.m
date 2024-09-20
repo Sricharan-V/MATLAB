@@ -1,0 +1,9 @@
+clc
+clear
+f1=4;
+f2=6;
+angl1=75;
+angl2=75;
+angl3=30;
+f2u=f2/(sin(deg2rad(angl1)))*(sin(deg2rad(angl2)));
+f2v=f2/(sin(deg2rad(angl1)))*(sin(deg2rad(angl3)));

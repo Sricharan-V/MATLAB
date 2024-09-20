@@ -1,0 +1,17 @@
+clc
+clear
+f1=400;
+f2=250;
+f3=200;
+angl=45;
+f1x=-f1;
+f1y=0;
+f2x=f2.*sin(deg2rad(angl));
+f2y=f2.*cos(deg2rad(angl));
+f3x=-f3*4/5;
+f3y=f3*3/5;
+FRx=f1x+f2x+f3x;
+FRy=f1y+f2y+f3y;
+Fr=sqrt(FRx^2+FRy^2);
+theta=atan(FRy/FRx);
+Theta=rad2deg(theta);

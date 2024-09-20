@@ -1,0 +1,15 @@
+clc
+clear
+F=100;
+angl1=60;
+angl2=45;
+Fz=F*sin(deg2rad(angl1));
+Fd=F*cos(deg2rad(angl1));
+Fx=Fd*cos(deg2rad(angl2));
+Fy=Fd*sin(deg2rad(angl2));
+alpha=acos(Fx/F);
+beta=acos(-Fy/F);
+gamma=acos(Fz/F);
+zAlpha=rad2deg(alpha);
+zBeta=rad2deg(beta);
+zGamma=rad2deg(gamma);

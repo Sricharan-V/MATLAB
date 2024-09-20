@@ -1,0 +1,11 @@
+clc;
+clear
+M=8;
+G=9.81;
+F=M*G;
+KAB=300;
+x2=0.4;
+Tac=F/sin(deg2rad(30));
+x3=Tac*cos(deg2rad(30))/KAB;
+x1=x2+x3;
+lac=(2-x1)/cos(deg2rad(30));

@@ -1,0 +1,11 @@
+clc;
+clear;
+f1=450;
+f2=700;
+angl1=60;
+angl2=15;
+angl=180-60+15;
+ANGLE=180-angl;
+Fr=sqrt(f1^2+f2^2-2*f1*f2*cos(deg2rad(ANGLE)));
+theta=asin(f2/Fr*sin(deg2rad(ANGLE)));
+Theta=rad2deg(theta)+angl1;
